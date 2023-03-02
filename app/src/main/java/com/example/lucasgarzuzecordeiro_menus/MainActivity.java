@@ -37,9 +37,15 @@ Button btnSobre;
             startActivity(in);
         });
 
-        btnNovoJogo=findViewById(R.id.btnNovoJogo);
-        btnNovoJogo.setOnClickListener(view -> {
-            Intent in = new Intent(MainActivity.this, NovoJogo.class);
+        btnEstatisticas=findViewById(R.id.btnEstatisticas);
+        btnEstatisticas.setOnClickListener(view -> {
+            Intent in = new Intent(MainActivity.this, Estatisticas.class);
+            startActivity(in);
+        });
+
+        btnSobre=findViewById(R.id.btnSobre);
+        btnSobre.setOnClickListener(view -> {
+            Intent in = new Intent(MainActivity.this, Sobre.class);
             startActivity(in);
         });
     }}
