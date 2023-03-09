@@ -8,23 +8,24 @@
 
     <TextView
         android:id="@+id/txtMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="36dp"
-        android:fontFamily="serif"
-        android:text="Menu"
+        android:layout_width="324dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Atividades de desenvolvimento de apps"
+        android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="60sp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="126dp"
-        android:layout_height="44dp"
+        android:id="@+id/btnCalculadoraSimples"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
         android:layout_marginTop="152dp"
-        android:text="Login"
+        android:text="Calculadora simples"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

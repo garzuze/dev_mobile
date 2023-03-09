@@ -24,7 +24,7 @@
             android:name=".NovoJogo"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".CalculadoraSimples"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

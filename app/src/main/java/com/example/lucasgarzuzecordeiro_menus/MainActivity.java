@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-Button btnLogin;
+Button btnCalculadoraSimples;
 Button btnNovoJogo;
 Button btnCarregarJogo;
 Button btnEstatisticas;
@@ -19,9 +19,9 @@ Button btnSobre;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnLogin=findViewById(R.id.btnLogin);
-        btnLogin.setOnClickListener((View.OnClickListener) view -> {
-            Intent in = new Intent(MainActivity.this, Login.class);
+        btnCalculadoraSimples=findViewById(R.id.btnCalculadoraSimples);
+        btnCalculadoraSimples.setOnClickListener((View.OnClickListener) view -> {
+            Intent in = new Intent(MainActivity.this, CalculadoraSimples.class);
             startActivity(in);
         });
 

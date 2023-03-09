@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculadoraSimples">
+
+    <TextView
+        android:id="@+id/txtCalculadora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Calculadora simples"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtVisorCalculadoraSimples"
+        android:layout_width="310dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="128dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSoma"
+        android:layout_width="69dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="188dp"
+        android:text="+"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSubtracao"
+        android:layout_width="69dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="188dp"
+        android:text="-"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMultiplicacao"
+        android:layout_width="69dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="188dp"
+        android:text="X"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMultiplicacao2"
+        android:layout_width="69dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="188dp"
+        android:text="/"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="272dp"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
