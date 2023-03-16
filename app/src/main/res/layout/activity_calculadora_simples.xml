@@ -20,12 +20,40 @@
 
     <EditText
         android:id="@+id/txtVisorCalculadoraSimples"
-        android:layout_width="310dp"
-        android:layout_height="41dp"
+        android:layout_width="127dp"
+        android:layout_height="47dp"
         android:layout_marginTop="128dp"
         android:ems="10"
+        android:hint="Número 1"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtResultado"
+        android:layout_width="309dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="264dp"
+        android:ems="10"
+        android:hint="Resultado"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtVisorCalculadoraSimples2"
+        android:layout_width="127dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="128dp"
+        android:ems="10"
+        android:hint="Número 2"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -63,23 +91,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnMultiplicacao2"
+        android:id="@+id/btnDivisao"
         android:layout_width="69dp"
         android:layout_height="62dp"
         android:layout_marginStart="292dp"
         android:layout_marginTop="188dp"
         android:text="/"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnCalcular"
-        android:layout_width="140dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="272dp"
-        android:text="Calcular"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
