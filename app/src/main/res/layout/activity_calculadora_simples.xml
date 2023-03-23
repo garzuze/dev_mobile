@@ -61,10 +61,11 @@
         android:id="@+id/btnSoma"
         android:layout_width="69dp"
         android:layout_height="62dp"
-        android:layout_marginStart="56dp"
         android:layout_marginTop="188dp"
         android:text="+"
         android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -76,6 +77,8 @@
         android:layout_marginTop="188dp"
         android:text="-"
         android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnMultiplicacao"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -87,6 +90,8 @@
         android:layout_marginTop="188dp"
         android:text="X"
         android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnDivisao"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -94,10 +99,11 @@
         android:id="@+id/btnDivisao"
         android:layout_width="69dp"
         android:layout_height="62dp"
-        android:layout_marginStart="292dp"
         android:layout_marginTop="188dp"
         android:text="/"
         android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
