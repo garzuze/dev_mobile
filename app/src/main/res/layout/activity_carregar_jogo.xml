@@ -7,12 +7,12 @@
     tools:context=".CarregarJogo">
 
     <TextView
-        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="164dp"
         android:layout_marginTop="108dp"
         android:text="Carregar Jogo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 </androidx.constraintlayout.widget.ConstraintLayout>

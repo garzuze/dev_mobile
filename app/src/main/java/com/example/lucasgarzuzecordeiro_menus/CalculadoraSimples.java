@@ -12,7 +12,7 @@ Button btnSoma, btnSubtracao, btnDivisao, btnMultiplicacao;
 TextView txtVisorCalculadoraSimples;
 TextView txtVisorCalculadoraSimples2;
 TextView txtResultado;
-Double num1, num2, num3;
+Double num1, num2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,47 +26,35 @@ Double num1, num2, num3;
         txtVisorCalculadoraSimples=findViewById(R.id.txtVisorCalculadoraSimples);
         txtVisorCalculadoraSimples2=findViewById(R.id.txtVisorCalculadoraSimples2);
         txtResultado=findViewById(R.id.txtResultado);
-        btnSoma.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                num1 = Double.parseDouble(txtVisorCalculadoraSimples.getText().toString());
-                num2 = Double.parseDouble(txtVisorCalculadoraSimples2.getText().toString());
-                double resultado = num1 + num2;
-                String resultadoString = String.valueOf(resultado);
-                txtResultado.setText(resultadoString);
-            }
+        btnSoma.setOnClickListener(view -> {
+            num1 = Double.parseDouble(txtVisorCalculadoraSimples.getText().toString());
+            num2 = Double.parseDouble(txtVisorCalculadoraSimples2.getText().toString());
+            double resultado = num1 + num2;
+            String resultadoString = String.valueOf(resultado);
+            txtResultado.setText(resultadoString);
         });
-        btnSubtracao.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                num1 = Double.parseDouble(txtVisorCalculadoraSimples.getText().toString());
-                num2 = Double.parseDouble(txtVisorCalculadoraSimples2.getText().toString());
-                double resultado = num1 - num2;
-                String resultadoString = String.valueOf(resultado);
-                txtResultado.setText(resultadoString);
-            }
+        btnSubtracao.setOnClickListener(view -> {
+            num1 = Double.parseDouble(txtVisorCalculadoraSimples.getText().toString());
+            num2 = Double.parseDouble(txtVisorCalculadoraSimples2.getText().toString());
+            double resultado = num1 - num2;
+            String resultadoString = String.valueOf(resultado);
+            txtResultado.setText(resultadoString);
         });
 
-        btnDivisao.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                num1 = Double.parseDouble(txtVisorCalculadoraSimples.getText().toString());
-                num2 = Double.parseDouble(txtVisorCalculadoraSimples2.getText().toString());
-                double resultado = num1 / num2;
-                String resultadoString = String.valueOf(resultado);
-                txtResultado.setText(resultadoString);
-            }
+        btnDivisao.setOnClickListener(view -> {
+            num1 = Double.parseDouble(txtVisorCalculadoraSimples.getText().toString());
+            num2 = Double.parseDouble(txtVisorCalculadoraSimples2.getText().toString());
+            double resultado = num1 / num2;
+            String resultadoString = String.valueOf(resultado);
+            txtResultado.setText(resultadoString);
         });
 
-        btnMultiplicacao.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                num1 = Double.parseDouble(txtVisorCalculadoraSimples.getText().toString());
-                num2 = Double.parseDouble(txtVisorCalculadoraSimples2.getText().toString());
-                double resultado = num1 * num2;
-                String resultadoString = String.valueOf(resultado);
-                txtResultado.setText(resultadoString);
-            }
+        btnMultiplicacao.setOnClickListener(view -> {
+            num1 = Double.parseDouble(txtVisorCalculadoraSimples.getText().toString());
+            num2 = Double.parseDouble(txtVisorCalculadoraSimples2.getText().toString());
+            double resultado = num1 * num2;
+            String resultadoString = String.valueOf(resultado);
+            txtResultado.setText(resultadoString);
         });
 
     }

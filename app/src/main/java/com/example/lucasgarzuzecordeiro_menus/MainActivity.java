@@ -22,19 +22,19 @@ Button btnSobre;
         setContentView(R.layout.activity_main);
 
         btnCalculadoraSimples=findViewById(R.id.btnCalculadoraSimples);
-        btnCalculadoraSimples.setOnClickListener((View.OnClickListener) view -> {
+        btnCalculadoraSimples.setOnClickListener(view -> {
             Intent in = new Intent(MainActivity.this, CalculadoraSimples.class);
             startActivity(in);
         });
 
         btnCalculadora2=findViewById(R.id.btnCalculadora2);
         btnCalculadora2.setOnClickListener(view -> {
-            Intent in = new Intent(MainActivity.this, Calculadora2.class);
+            Intent in = new Intent(MainActivity.this, CalculadoraNovaTela.class);
             startActivity(in);
         });
 
         btnCarregarJogo=findViewById(R.id.btnCarregarJogo);
-        btnCarregarJogo.setOnClickListener((View.OnClickListener) view -> {
+        btnCarregarJogo.setOnClickListener(view -> {
             Intent in = new Intent(MainActivity.this, CarregarJogo.class);
             startActivity(in);
         });
