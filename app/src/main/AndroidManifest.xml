@@ -30,7 +30,7 @@
             android:name=".Sobre"
             android:exported="false" />
         <activity
-            android:name=".Estatisticas"
+            android:name=".Conversao"
             android:exported="false" />
         <activity
             android:name=".JogoDaMemoria"

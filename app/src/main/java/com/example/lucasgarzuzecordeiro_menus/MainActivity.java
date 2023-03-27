@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnConversao=findViewById(R.id.btnConversao);
         btnConversao.setOnClickListener(view -> {
-            Intent in = new Intent(MainActivity.this, Estatisticas.class);
+            Intent in = new Intent(MainActivity.this, Conversao.class);
             startActivity(in);
         });
 
