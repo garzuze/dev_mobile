@@ -26,6 +26,7 @@ Double num1, num2;
         txtVisorCalculadoraSimples=findViewById(R.id.txtVisorCalculadoraSimples);
         txtVisorCalculadoraSimples2=findViewById(R.id.txtVisorCalculadoraSimples2);
         txtResultado=findViewById(R.id.txtResultado);
+
         btnSoma.setOnClickListener(view -> {
             num1 = Double.parseDouble(txtVisorCalculadoraSimples.getText().toString());
             num2 = Double.parseDouble(txtVisorCalculadoraSimples2.getText().toString());
@@ -33,6 +34,7 @@ Double num1, num2;
             String resultadoString = String.valueOf(resultado);
             txtResultado.setText(resultadoString);
         });
+
         btnSubtracao.setOnClickListener(view -> {
             num1 = Double.parseDouble(txtVisorCalculadoraSimples.getText().toString());
             num2 = Double.parseDouble(txtVisorCalculadoraSimples2.getText().toString());

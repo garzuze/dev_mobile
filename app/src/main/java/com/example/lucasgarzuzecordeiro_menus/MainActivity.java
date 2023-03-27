@@ -5,15 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-Button btnCalculadoraSimples;
-Button btnCalculadora2;
-Button btnCarregarJogo;
-Button btnEstatisticas;
-Button btnSobre;
+    Button btnCalculadoraSimples;
+    Button btnCalculadora2;
+    Button btnCalculadora3;
+    Button btnJogodaMemoria;
+    Button btnConversao;
+    Button btnIMC;
+    Button btnLocalizarESubstituir;
+    Button btnGerarAleatorio;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -33,21 +35,23 @@ Button btnSobre;
             startActivity(in);
         });
 
-        btnCarregarJogo=findViewById(R.id.btnCarregarJogo);
-        btnCarregarJogo.setOnClickListener(view -> {
-            Intent in = new Intent(MainActivity.this, CarregarJogo.class);
+        btnJogodaMemoria=findViewById(R.id.btnJogodaMemoria);
+        btnJogodaMemoria.setOnClickListener(view -> {
+            Intent in = new Intent(MainActivity.this, JogoDaMemoria.class);
             startActivity(in);
         });
 
-        btnEstatisticas=findViewById(R.id.btnEstatisticas);
-        btnEstatisticas.setOnClickListener(view -> {
+        btnConversao=findViewById(R.id.btnConversao);
+        btnConversao.setOnClickListener(view -> {
             Intent in = new Intent(MainActivity.this, Estatisticas.class);
             startActivity(in);
         });
 
-        btnSobre=findViewById(R.id.btnSobre);
-        btnSobre.setOnClickListener(view -> {
+        btnIMC=findViewById(R.id.btnIMC);
+        btnIMC.setOnClickListener(view -> {
             Intent in = new Intent(MainActivity.this, Sobre.class);
             startActivity(in);
         });
+
+
     }}
