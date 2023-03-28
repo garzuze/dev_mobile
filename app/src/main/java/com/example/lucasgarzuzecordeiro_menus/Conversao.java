@@ -17,7 +17,7 @@ public class Conversao extends AppCompatActivity {
     Button btnConverterBRL;
     Button brnConverterUSD;
     // Criando função para limitar os números decimais a duas casas
-    private static final DecimalFormat df = new DecimalFormat("0.00"); /
+    private static final DecimalFormat df = new DecimalFormat("0.00");
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -49,9 +49,13 @@ public class MainActivity extends AppCompatActivity {
 
         btnIMC=findViewById(R.id.btnIMC);
         btnIMC.setOnClickListener(view -> {
-            Intent in = new Intent(MainActivity.this, Sobre.class);
+            Intent in = new Intent(MainActivity.this, CalcularIMC.class);
             startActivity(in);
         });
 
-
+        btnLocalizarESubstituir=findViewById(R.id.btnLocalizarESubstituir);
+        btnLocalizarESubstituir.setOnClickListener(view -> {
+            Intent in = new Intent(MainActivity.this, LocalizarESubstituir.class);
+            startActivity(in);
+        });
     }}
