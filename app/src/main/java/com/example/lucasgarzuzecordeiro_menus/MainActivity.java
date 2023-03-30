@@ -8,14 +8,8 @@ import android.os.Bundle;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnCalculadoraSimples;
-    Button btnCalculadora2;
-    Button btnCalculadora3;
-    Button btnJogodaMemoria;
-    Button btnConversao;
-    Button btnIMC;
-    Button btnLocalizarESubstituir;
-    Button btnGerarAleatorio;
+    Button btnCalculadoraSimples, btnCalculadora2, btnCalculadora3, btnJogodaMemoria, btnConversao;
+    Button btnIMC, btnLocalizarESubstituir, btnGerarAleatorio;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -32,6 +26,12 @@ public class MainActivity extends AppCompatActivity {
         btnCalculadora2=findViewById(R.id.btnCalculadora2);
         btnCalculadora2.setOnClickListener(view -> {
             Intent in = new Intent(MainActivity.this, CalculadoraNovaTela.class);
+            startActivity(in);
+        });
+
+        btnCalculadora3=findViewById(R.id.btnCalculadora3);
+        btnCalculadora3.setOnClickListener(view -> {
+            Intent in = new Intent(MainActivity.this, Calculadora3.class);
             startActivity(in);
         });
 
@@ -58,4 +58,11 @@ public class MainActivity extends AppCompatActivity {
             Intent in = new Intent(MainActivity.this, LocalizarESubstituir.class);
             startActivity(in);
         });
+
+        btnGerarAleatorio=findViewById(R.id.btnGerarAleatorio);
+        btnGerarAleatorio.setOnClickListener(view -> {
+            Intent in = new Intent(MainActivity.this, GerarAleatorio.class);
+            startActivity(in);
+        });
+
     }}

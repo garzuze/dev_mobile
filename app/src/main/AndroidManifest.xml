@@ -12,6 +12,9 @@
         android:theme="@style/Theme.LucasGarzuzeCordeiroMenus"
         tools:targetApi="31">
         <activity
+            android:name=".GerarAleatorio"
+            android:exported="false" />
+        <activity
             android:name=".LocalizarESubstituir"
             android:exported="false" />
         <activity
